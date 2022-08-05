@@ -51,13 +51,31 @@
 // }
 
 // GETELEMENTSBYTAGNAME //
-var li = document.getElementsByTagName('li');
-console.log(li);
-console.log(li[1]);
-li[1].textContent = 'Hello 2';
-li[1].style.fontWeight = 'bold'; 
-li[1].style.backgroundColor = 'yellow';
-for(let i = 0; i<li.length; i++){
-li[i].style.backgroundColor = 'gray';
-}
+// var li = document.getElementsByTagName('li');
+// console.log(li);
+// console.log(li[1]);
+// li[1].textContent = 'Hello 2';
+// li[1].style.fontWeight = 'bold'; 
+// li[1].style.backgroundColor = 'yellow';
+// for(let i = 0; i<li.length; i++){
+// li[i].style.backgroundColor = 'gray';
+// }
 
+// QUERYSELECTOR //
+var header = document.querySelector('#main-header');
+header.style.borderBotton = 'solid 4px grey';
+
+var input = document.querySelector('input');
+input.value = "Hello World!";
+
+var submit = document.querySelector('input[type="submit"]');
+submit.value = "SEND";
+
+var item = document.querySelector('.list-group-item');
+item.style.color = 'red'; 
+
+var secondItem = document.querySelector('.list-group-item:nth-child(2)');
+secondItem.style.backgroundColor = 'green';
+
+var thirdItem = document.querySelector('.list-group-item:nth-child(3)');
+thirdItem.style.visibility = 'hidden';
